@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:theme="@style/NoAppBar">
+
+    <ImageView
+        android:id="@+id/imv_si_logo"
+        android:layout_width="308dp"
+        android:layout_height="296dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/layout_si_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/email"
+        app:startIconTint="@color/blue_03"
+        android:hint="@string/email_id"
+        android:paddingVertical="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/et_si_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Code written by Kaustav Chakraborty T91/IT/196004 -->
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/layout_signIn_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/phone"
+        app:startIconTint="@color/blue_03"
+        android:hint="@string/password"
+        android:paddingVertical="5dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue_05"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/et_si_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_si_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_03"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/sign_in"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_si_signUpOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/blue_05"
+        android:text="@string/don_t_have_an_account_signup_now"
+        android:gravity="center"
+        />
+
+
+
+
+</LinearLayout>

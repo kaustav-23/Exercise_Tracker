@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Exercise_Tracker</string>
+    <string name="extrack">EXTRACK</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIgn In</string>
+    <string name="don_t_have_an_account_signup_now">Don\'t have an account? SignUp now</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="age">Age (Y)</string>
+    <string name="weight">Weight (KG)</string>
+    <string name="height">Height (M)</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+</resources>

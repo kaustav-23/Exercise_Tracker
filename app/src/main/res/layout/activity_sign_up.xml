@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignUpActivity"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="70dp"
+        android:theme="@style/NoAppBar"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_userName"
+            app:startIconDrawable="@drawable/user"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:paddingVertical="7dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_su_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_email"
+            app:startIconDrawable="@drawable/email"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_id"
+            android:paddingVertical="7dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <!-- Code written by Kaustav Chakraborty T91/IT/196004 -->
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/tiet_su_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_password"
+            app:startIconDrawable="@drawable/key"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
+            android:paddingVertical="7dp"
+            app:passwordToggleTint="@color/blue_05"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_su_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_phoneNo"
+            app:startIconDrawable="@drawable/phone"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_number"
+            android:paddingVertical="7dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_su_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_age"
+            app:startIconDrawable="@drawable/age"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/age"
+            android:paddingVertical="7dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_su_age"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_weight"
+            app:startIconDrawable="@drawable/weight"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight"
+            android:paddingVertical="7dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_su_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_su_height"
+            app:startIconDrawable="@drawable/height"
+            app:startIconTint="@color/blue_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height"
+            android:paddingVertical="7dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_su_height"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_su_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_gender"
+            android:paddingVertical="7dp"
+            android:layout_margin="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_su_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_su_genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:buttonTint="@color/blue_03"/>
+
+            <RadioButton
+                android:id="@+id/rb_su_genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:buttonTint="@color/blue_03"/>
+            <RadioButton
+                android:id="@+id/rb_su_genderOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others"
+                android:buttonTint="@color/blue_03"/>
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_su_submit"
+            android:backgroundTint="@color/blue_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginTop= "50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_su_signInOpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign In"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/blue_05"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+

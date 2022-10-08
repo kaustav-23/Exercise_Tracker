@@ -32,6 +32,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    //-------------------------------Broadcast Receiver ------------------------------------
     @Override
     protected void onStart() {
         super.onStart();

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255475869792",
+    "project_id": "exercise-tracker-rc-126ba",
+    "storage_bucket": "exercise-tracker-rc-126ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255475869792:android:8df62781c27cde3788fb05",
+        "android_client_info": {
+          "package_name": "com.example.exercise_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255475869792-2vg0b4h6h39a6r6iprr91uhf8aggcon8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO7GuH54msKG9kahtxQFL42w2JO1fUs94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255475869792-2vg0b4h6h39a6r6iprr91uhf8aggcon8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

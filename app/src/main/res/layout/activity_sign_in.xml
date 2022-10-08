@@ -28,8 +28,8 @@
         android:paddingVertical="5dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <EditText
-            android:id="@+id/et_si_email"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_si_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"/>
@@ -42,7 +42,7 @@
         android:id="@+id/layout_signIn_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/phone"
+        app:startIconDrawable="@drawable/key"
         app:startIconTint="@color/blue_03"
         android:hint="@string/password"
         android:paddingVertical="5dp"
@@ -50,11 +50,11 @@
         app:passwordToggleTint="@color/blue_05"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <EditText
-            android:id="@+id/et_si_pwd"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_si_pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
 
 
     </com.google.android.material.textfield.TextInputLayout>

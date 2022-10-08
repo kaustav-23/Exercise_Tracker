@@ -1,43 +1,36 @@
 package com.example.exercise_tracker;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.os.Handler;
+import android.widget.Button;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-
-
-
+public class MenuActivity extends AppCompatActivity {
+    AirplaneModeChangeReceiver airplaneModeChangeReceiver = new AirplaneModeChangeReceiver();
+    ViewPager viewPager ;
+    Button download;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu);
 
+        download = findViewById(R.id.btn_menu_Download_N_File);
 
-        new Handler().postDelayed(() -> {
+        viewPager = (ViewPager) findViewById(R.id.vp_menu_menuOpt);
+        ViewPageAdapter viewPageAdapter = new ViewPageAdapter(this);
 
+        viewPager.setAdapter(viewPageAdapter);
 
-                Intent in = new Intent(MainActivity.this, SignInActivity.class);
-                startActivity(in);
+        download.setOnClickListener(view -> {
 
-                MainActivity.this.finish();
+            Toast.makeText(this, "Download Successful", Toast.LENGTH_SHORT).show();
+        });
 
-
-
-        },2500);
     }
-
-
-
-
-
-
-    //-------------------------------Broadcast Receiver ------------------------------------
-    AirplaneModeChangeReceiver airplaneModeChangeReceiver = new AirplaneModeChangeReceiver();
 
     @Override
     protected void onStart() {

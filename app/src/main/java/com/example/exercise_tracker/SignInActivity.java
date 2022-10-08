@@ -3,13 +3,19 @@ package com.example.exercise_tracker;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 public class SignInActivity extends AppCompatActivity {
+    AirplaneModeChangeReceiver airplaneModeChangeReceiver = new AirplaneModeChangeReceiver();
+
     TextView signUpOpt;
+
+
+
 
 
     @Override
@@ -27,4 +33,27 @@ public class SignInActivity extends AppCompatActivity {
 
 
     }
+
+
+
+    //-------------------------------Broadcast Receiver ------------------------------------
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(Intent.ACTION_AIRPLANE_MODE_CHANGED);
+        filter.addAction(Intent.ACTION_POWER_DISCONNECTED);
+        filter.addAction(Intent.ACTION_POWER_CONNECTED);
+
+        registerReceiver(airplaneModeChangeReceiver, filter);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        unregisterReceiver(airplaneModeChangeReceiver);
+    }
 }
+
+

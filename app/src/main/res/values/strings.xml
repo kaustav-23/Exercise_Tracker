@@ -16,4 +16,6 @@
     <string name="female">Female</string>
     <string name="others">Others</string>
     <string name="download_nutrition_file">Download Nutrition File</string>
+    <string name="download_data">Download Data</string>
+    <string name="show_data">Show Data</string>
 </resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context=".CycleActivity">
+
+    <TextView
+        android:id="@+id/tv_cycle_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tomorrow_semibold"
+        android:gravity="center"
+        android:text="@string/cycling"
+        android:textColor="@color/blue_03"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <!--Image View for the circle-->
+
+
+    <!--Image View for the circle-->
+
+
+    <TextView
+        android:id="@+id/tv_cycle_kcal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/calories_burned"
+        android:fontFamily="@font/tomorrow_semibold"
+        android:textColor="@color/blue_05"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_circle_kcal"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/iv_circle_kcal"
+        app:layout_constraintTop_toTopOf="@+id/iv_circle_kcal" />
+
+    <TextView
+        android:id="@+id/tv_cycle_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        android:fontFamily="@font/tomorrow_semibold"
+        android:textColor="@color/blue_05"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_circle_kcal"
+        app:layout_constraintEnd_toEndOf="@+id/iv_circle_kcal"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/iv_circle_kcal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cycle_kcal_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_circle_kcal"
+        android:layout_width="181dp"
+        android:layout_height="182dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cycle_start"
+        app:layout_constraintEnd_toStartOf="@+id/iv_circle_watch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cycle_name" />
+
+    <TextView
+        android:id="@+id/tv_cycle_stopwatch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_elapsed"
+        android:fontFamily="@font/tomorrow_semibold"
+        android:textColor="@color/blue_05"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cycle_stopwatch"
+        app:layout_constraintEnd_toEndOf="@+id/iv_circle_watch"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/iv_circle_watch"
+        app:layout_constraintTop_toTopOf="@+id/iv_circle_watch"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <TextView
+        android:id="@+id/tv_cycle_stopwatch"
+        android:layout_width="133dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="28dp"
+        android:text="0"
+        android:fontFamily="@font/tomorrow_semibold"
+        android:textColor="@color/blue_05"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_circle_watch"
+        app:layout_constraintEnd_toEndOf="@+id/iv_circle_watch"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/iv_circle_watch" />
+
+    <ImageView
+        android:id="@+id/iv_circle_watch"
+        android:layout_width="181dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cycle_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_circle_kcal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cycle_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_cycle_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cycle_stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_circle_watch" />
+
+    <Button
+        android:id="@+id/btn_cycle_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/stop"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cycle_start"
+        app:layout_constraintTop_toBottomOf="@+id/iv_circle_watch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

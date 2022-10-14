@@ -10,8 +10,27 @@
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="573dp">
 
     </com.github.barteksc.pdfviewer.PDFView>
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_below="@+id/pdfview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/escriba_el_mensaje_y_luego_clickee_el_canal_a_ser_enviado"
+        android:textSize="20sp"
+        android:textColor="@color/blue_03">
+
+    </TextView>
 
 </RelativeLayout>

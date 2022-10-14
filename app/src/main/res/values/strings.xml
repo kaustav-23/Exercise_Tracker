@@ -16,6 +16,13 @@
     <string name="female">Female</string>
     <string name="others">Others</string>
     <string name="download_nutrition_file">Download Nutrition File</string>
-    <string name="download_data">Download Data</string>
-    <string name="show_data">Show Data</string>
+    <string name="escriba_el_mensaje_y_luego_clickee_el_canal_a_ser_enviado">Escriba el mensaje y luego clickee el canal a ser enviado</string>
+    <string name="walking">WALKING</string>
+    <string name="time_elapsed">Time Elapsed</string>
+    <string name="calories_burned">Calories Burned</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="jogging">JOGGING</string>
+    <string name="cycling">CYCLING</string>
+    <string name="go_back">Go Back</string>
 </resources>
